@@ -1,0 +1,38 @@
+a {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  margin: 30px 10px;
+  border: 1px solid #FFF;
+  transition: all .35s;
+  font-family: 'Monserrat', sans-serif;
+  text-decoration: none;
+  color: white;
+  background: none;
+
+  & span {
+    position: relative;
+    z-index: 5;
+    color: #FFFFFF;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(231, 122, 110, 0.78);
+    transition: all .35s;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    z-index: 1;
+    width: 100%;
+  }
+}
