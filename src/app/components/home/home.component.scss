@@ -1,20 +1,9 @@
-.background {
-  position: fixed;
-  z-index: 0;
-  height: 100vh;
-  width: 100%;
-  background-image: url("../../../assets/images/background-image.jpg");
-  background-position: center;
-  background-size: cover;
-  filter: blur(5px);
-  transform: scale(1.1);
-}
-
 .container {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  margin: 30px 100px;
-  background-color: rgba(26, 26, 26, 0.9);
+  background-color: rgb(229, 229, 229);
+  width: 100%;
+  padding: 3% 0;
+  .myOutlet{
+    position: relative;
+    z-index: 100;
+  }
 }
