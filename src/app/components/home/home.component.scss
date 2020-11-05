@@ -1,6 +1,7 @@
 .container {
   background-color: rgb(229, 229, 229);
   width: 100%;
+  min-height: 100vh;
   padding: 3% 0;
   .myOutlet{
     position: relative;
