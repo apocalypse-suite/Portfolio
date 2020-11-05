@@ -3,7 +3,7 @@ a {
   position: relative;
   padding: 10px 25px;
   margin: 30px 10px;
-  border: 1px solid #FFF;
+  border: 1px solid #14213D;
   transition: all .35s;
   font-family: 'Monserrat', sans-serif;
   text-decoration: none;
@@ -13,7 +13,7 @@ a {
   & span {
     position: relative;
     z-index: 5;
-    color: #FFFFFF;
+    color: #14213D;
   }
 
   &:after {
@@ -23,7 +23,7 @@ a {
     left: 0;
     width: 0;
     height: 100%;
-    background: rgba(231, 122, 110, 0.78);
+    background: rgba(20, 33, 61, 0.78);
     transition: all .35s;
   }
 
