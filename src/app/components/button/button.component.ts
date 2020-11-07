@@ -8,7 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input('text') text: string;
   @Input('route') route: string;
-
+  scrollToBottom(): void{
+    window.scrollTo(0, document.body.scrollHeight);
+  }
   constructor() { }
 
   ngOnInit(): void {
