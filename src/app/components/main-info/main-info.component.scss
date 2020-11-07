@@ -1,71 +1,75 @@
-.main {
-  width: 70%;
-  height: 65vh;
-  position: relative;
-  z-index: 10;
-  background-color: rgb(210, 210, 210);
-  margin: auto;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
-  .wrapper {
-    float: left;
-    min-height: 412px;
-    height: inherit;
-  }
-
-  .header {
-    color: #fca311;
-    position: absolute;
-    top: 7%;
-    left: 25%;
-    z-index: 10;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2.1em;
-    line-height: 1em;
-  }
-
-  .left {
-    width: 30%;
-    //padding: 4% 0 4% 10%;
-    position: relative;
-
-    img {
-      height: 100%;
-      position: relative;
-      z-index: 9;
-    }
-
-  }
-
-  .right {
+.container{
+  width: 100%;
+  background-color: rgba(102, 101, 98, 0.23);
+  .main {
     width: 70%;
-    padding: 10% 0 0 5%;
-    font-family: 'Monserrat', sans-serif;
+    height: 65vh;
     position: relative;
+    //z-index: 10;
+    margin: auto;
 
-    .cv {
-      text-decoration: none;
-      color: #fca311;
+    .wrapper {
+      float: left;
+      min-height: 412px;
+      height: inherit;
+    }
+
+    .header {
+      color: #e63946;
       position: absolute;
-      top: 5%;
-      right: 5%;
+      top: 1%;
+      left: 12%;
+      z-index: 10;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 2.5em;
+      line-height: 1em;
     }
 
-    .sub-header {
-      padding-left: 2%;
-      font-size: 1.5em;
-      color: #e5e5e5;
-      background-color: #14213d;
-      margin: 5% 0;
+    .left {
+      width: 30%;
+      //padding: 4% 0 4% 10%;
+      position: relative;
+
+      img {
+        height: 80%;
+        position: relative;
+        top: 10%;
+        left: 20%;
+        z-index: 9;
+      }
+
     }
 
-    p {
-      font-size: 1em;
-      line-height: 1.2em;
-      color: rgb(20, 33, 61);
-      padding-right: 100px;
+    .right {
+      width: 70%;
+      padding: 10% 0 0 5%;
+      font-family: 'Monserrat', sans-serif;
+      position: relative;
+
+      .cv {
+        text-decoration: none;
+        color: #e63946;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+      }
+
+      .sub-header {
+        padding-left: 2%;
+        font-size: 1.5em;
+        color: #e5e5e5;
+        background-color: #14213d;
+        margin: 5% 0;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.2em;
+        color: rgb(20, 33, 61);
+        padding-right: 100px;
+      }
     }
   }
 }
