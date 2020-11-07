@@ -1,8 +1,20 @@
 .container {
-  background-color: rgb(229, 229, 229);
   width: 100%;
   min-height: 100vh;
+  position: relative;
   padding: 3% 0;
+  overflow: hidden;
+  &::before{
+    content: "";
+    background: url("../../../assets/images/bg4.jpg") no-repeat fixed top center;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+  }
   .myOutlet{
     position: relative;
     z-index: 100;
