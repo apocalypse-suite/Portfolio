@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="main">
+    <div class="options">
+      <span class="soft skills" (click)="toggle('soft')">Soft Skills</span>
+      <span class="hard skills" (click)="toggle('hard')">Hard Skills</span>
+    </div>
+    <div class="left" *ngIf="option === 'soft'">
+      <div class="info">
+        <p class="card">Reliable and organized</p>
+        <p class="card">Flexible</p>
+        <p class="card">Motivated</p>
+        <p class="card">Creative spirit</p>
+        <p class="card">Fast learner</p>
+        <p class="card">Team player</p>
+        <p class="card">Critical thinker</p>
+      </div>
+      <div class="image">
+        <div class="box"></div>
+        <img src="../../../assets/images/soft.jpg" alt="" class="soft">
+      </div>
+    </div>
+    <div class="right" *ngIf="option === 'hard'">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem maiores modi mollitia officia porro quasi
+        quisquam ratione saepe sunt.</p>
+    </div>
+
+  </div>
+
+</div>
