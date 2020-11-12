@@ -20,3 +20,10 @@
     z-index: 100;
   }
 }
+@media (min-width: 480px) and (max-width: 600px) {
+  .container{
+    &::before{
+      background-size: auto 100vh;
+    }
+  }
+}
