@@ -1,8 +1,15 @@
 <div class="container">
   <div class="main">
-<div class="projectCard" *ngFor="let project of projects">
-  <h3 class="name">{{ project.name }}</h3>
-  <hr>
-</div>
+    <div class="projectCard" *ngFor="let project of projects">
+     <div class="cardTop">
+       <h3 class="name">{{ project.name }}</h3>
+       <hr>
+     </div>
+      <div class="cardBody">
+        <div class="image"><img src="{{ project.pictureUrl }}" alt=""></div>
+        <p class="description"> {{ project.description }} </p>
+        <a class="link" href="{{project.projectUrl}}"> >> </a>
+      </div>
+    </div>
   </div>
 </div>

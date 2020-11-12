@@ -9,18 +9,21 @@ export class ProjectsComponent implements OnInit {
   projects: any [] = [
     {
       name: 'Final HTML/CSS',
+      pictureUrl: '../../assets/images/HTML-CSS-final.jpg',
       projectUrl: '',
-      description: ''
+      description: 'Responsive landing page'
     },
     {
       name: 'Future Project 1',
+      pictureUrl: '../../assets/images/Weather-app.png',
       projectUrl: '',
-      description: ''
+      description: 'Lorem ipsum dolor.'
     },
     {
       name: 'Future Project 2',
+      pictureUrl: '../../assets/images/Dashboard.png',
       projectUrl: '',
-      description: ''
+      description: 'Lorem ipsum dolor.'
     }
   ];
 
