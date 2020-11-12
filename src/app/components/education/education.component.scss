@@ -1,4 +1,4 @@
-.container{
+.container {
   width: 100%;
   height: 300px;
   background-color: rgba(20, 33, 61, 0.35);
@@ -15,11 +15,13 @@
       font-family: 'Monserrat', sans-serif;
       color: white;
       position: relative;
-      .position{
+
+      .position {
         border-left: 1px solid white;
         padding-left: 3%;
       }
-      h2{
+
+      h2 {
         font-style: italic;
         font-family: "Playfair Display", serif;
         margin: 5% 0;
@@ -35,7 +37,6 @@
 
       .header {
         position: absolute;
-        //top: 25%;
         z-index: 20;
         transform-origin: 0 0;
         border-top: 3px solid white;
@@ -51,34 +52,74 @@
         position: absolute;
         z-index: 10;
         width: 135%;
-        //height: 80%;
       }
     }
   }
-
 }
+
+@media (min-width: 480px) and (max-width: 600px) {
+  .container {
+    height: 600px;
+
+    .main {
+      width: 100%;
+      padding-top: 5%;
+
+      .left {
+        height: 50%;
+        float: none;
+        margin: auto;
+      }
+
+      .right {
+        float: none;
+        width: 100%;
+        height: 50%;
+        background: none;
+
+        .header {
+          top: 50%;
+          left: 50%;
+          transform: none;
+        }
+
+        .books {
+          width: 100%;
+          opacity: 0.7;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1280px) {
-  .left{
+  .left {
     padding: 3% 15% 2% 0;
   }
-  .right{
-    .books{
+  .right {
+    .books {
       top: 11%;
       right: 15%;
     }
-    .header{
+
+    .header {
       top: 25%;
       right: 3%;
     }
   }
 }
+
 @media (max-width: 1279px) and (min-width: 1024px) {
-  .right{
-    .books{
+  .right {
+    .books {
       top: 16%;
-      right:5%;
+      right: 5%;
     }
-    .header{
+
+    .header {
       top: 22%;
       right: -25%;
     }
