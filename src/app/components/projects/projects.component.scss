@@ -70,19 +70,31 @@
 }
 
 @keyframes shadow-show {
-  from {
-    box-shadow: 0 0 0 0 #e0e0e0
-  }
-  to {
-    box-shadow: -20px -20px 0px 0px rgba(255, 255, 255, 0.24)
-  }
+  from {box-shadow: 0 0 0 0 #e0e0e0}
+  to {box-shadow: -20px -20px 0px 0px rgba(255, 255, 255, 0.24)}
 }
 
 @keyframes line-show {
-  from {
-    margin: 0 100px
-  }
-  to {
-    margin: 0
+  from {margin: 0 100px}
+  to {margin: 0}
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .container{
+    height: max-content;
+    .main{
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+
+      .projectCard{
+        height: 90%;
+        .cardBody{
+          .image{
+            height: 70%;
+          }
+        }
+      }
+    }
+
   }
 }

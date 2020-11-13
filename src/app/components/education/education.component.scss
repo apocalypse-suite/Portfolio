@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .container {
     height: 600px;
 
@@ -66,9 +66,10 @@
       padding-top: 5%;
 
       .left {
-        height: 50%;
+        height: max-content;
         float: none;
         margin: auto;
+        padding-bottom: 10px;
       }
 
       .right {
