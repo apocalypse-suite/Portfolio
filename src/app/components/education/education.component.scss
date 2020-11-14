@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 700px) {
   .container {
     height: 600px;
 
@@ -96,14 +96,39 @@
   }
 }
 
+@media (min-width: 701px) and (max-width: 1023px) {
+  .container {
+    .main {
+      width: 100%;
+      padding: 0 2%;
+
+      .left{
+        padding: 2% 10%;
+      }
+      .right {
+        .header {
+          top: 25%;
+          left: 25%;
+          border: none;
+        }
+        .books {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1280px) {
   .left {
     padding: 3% 15% 2% 0;
   }
   .right {
     .books {
-      top: 11%;
+      //top: 11%;
       right: 15%;
+      height: 100%;
     }
 
     .header {

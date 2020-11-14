@@ -20,7 +20,7 @@
     z-index: 100;
   }
 }
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 1170px) {
   .container{
     &::before{
       background-size: auto 100vh;

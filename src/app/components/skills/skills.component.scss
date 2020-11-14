@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.43);
 
   .main {
-    width: 70%;
+    width: 85%;
     height: 100%;
     margin: auto;
 
@@ -153,7 +153,7 @@
     }
   }
 }
-@media (min-width: 320px) and (max-width: 600px){
+@media (min-width: 320px) and (max-width: 699px){
   .container{
     height: max-content;
     .main{
@@ -197,6 +197,43 @@
         .skills{
           width: 100%;
           grid-template-columns: repeat(2,1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1023px){
+  .container{
+    height: max-content;
+    .main{
+      width: 95%;
+      .left{
+        height: 400px;
+        .info{
+          width: 65%;
+          .text{
+            padding: 4% 10%;
+            height: auto;
+          }
+          .skillBox{
+            .card{
+              width: 40%;
+              padding: 5px 0;
+            }
+          }
+        }
+        .image{
+          width: 35%;
+          padding-right: 2%;
+          top: 20%;
+        }
+      }
+      .right{
+        height: 700px;
+        .skills{
+          width: 100%;
+          grid-template-columns: repeat(3,1fr);
         }
       }
     }
