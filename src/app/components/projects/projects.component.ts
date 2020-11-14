@@ -10,7 +10,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Final HTML/CSS',
       pictureUrl: '../../assets/images/HTML-CSS-final.jpg',
-      projectUrl: '',
+      projectUrl: 'https://github.com/apocalypse-suite/HTML-CSS',
       description: 'Responsive landing page'
     },
     {
