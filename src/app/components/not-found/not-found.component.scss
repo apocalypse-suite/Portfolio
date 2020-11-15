@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e4e1;
+  position: fixed;
+  overflow-y: auto;
+
+  .main {
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    color: #37374e;
+
+    .searchingImg {
+      width: 80%;
+      height: auto;
+      padding-top: 10%;
+    }
+
+    h2 {
+      padding: 10% 0;
+    }
+
+    .right {
+      padding-top: 10%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 80%;
+    font-size: 1.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .left {
+      float: left;
+      width: 60%;
+      height: 500px;
+    }
+
+    .right {
+      float: right;
+      width: 40%;
+      height: 500px;
+    }
+  }
+}
