@@ -1,0 +1,25 @@
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e63946;
+  opacity: 0.2;
+  position: relative;
+  z-index: 10000;
+  bottom: -20px;
+  right: 2%;
+  float: right;
+  transition: 0.7s;
+
+  img {
+    height: 40px;
+  }
+  &:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  &:focus{
+    outline: none;
+  }
+}

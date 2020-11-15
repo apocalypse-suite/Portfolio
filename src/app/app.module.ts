@@ -11,6 +11,7 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { InfoComponent } from './components/info/info.component';
+import { ToTopComponent } from './components/to-top/to-top.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InfoComponent } from './components/info/info.component';
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    InfoComponent
+    InfoComponent,
+    ToTopComponent
   ],
   imports: [
     BrowserModule,
