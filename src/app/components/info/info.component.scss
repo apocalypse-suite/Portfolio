@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  height: 1450px;
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: inherit;
+    padding: 0 5%;
+
+    header {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      font-weight: bolder;
+      padding: 25px 0;
+    }
+
+    article {
+      font-family: 'Monserrat', sans-serif;
+      text-align: justify;
+
+      p {
+        padding: 5px;
+        text-align: justify;
+      }
+
+    }
+
+    .activity {
+      article {
+        text-align: center;
+
+        .interest {
+          padding: 15px 20px;
+        }
+
+        img {
+          width: 250px;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .social-media {
+
+      article {
+        div {
+          margin-top: 20px;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            text-decoration: none;
+
+            img {
+              width: 30px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    height: 720px;
+
+    .main {
+      .activity {
+        width: 80%;
+        margin: 0 auto;
+
+        .top {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+
+          .left {
+            padding: 5% 15%;
+            background-color: rgba(92, 91, 88, 0.17);
+          }
+        }
+
+        .bottom {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .social-media {
+        width: 90%;
+        margin: 0 auto;
+
+        article {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 999px) {
+  .container {
+    .main {
+      .activity {
+        .top {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+
+          .left {
+            padding: 0 15%;
+          }
+        }
+
+        .bottom {
+          .interest {
+            width: 60%;
+            margin: 50px auto;
+          }
+        }
+      }
+    }
+  }
+}
+

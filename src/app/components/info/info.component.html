@@ -1,0 +1,49 @@
+<div class="container">
+  <main class="main">
+    <section class="activity">
+      <header>My activity:</header>
+      <article>
+        <div class="top">
+          <div class="left">
+            <p> In search of simple human happiness and personal values. Exploring the benefit of minimalistic way of
+              life
+              and
+              mindfulness, as well as putting a lot of effort in self-development and better understanding of the world.
+            </p>
+            <p>Always up for fun and creative work</p>
+          </div>
+          <div class="right"><img src="../../../assets/images/activity.svg" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="interest">
+            <h3>Learning languages</h3>
+            <p>Learning two of the most popular languages in the world helped me to connect with people of different
+              qualifications and nationalities. Moreover, it developed my interpersonal skills and allowed me to be more
+              open-minded.</p>
+          </div>
+          <div class="interest">
+            <h3>Photography</h3>
+            <p>Being able to capture beauty has taught me that it could be found everywhere - ever since I've taken a
+              camera into my hands, I am looking for creative approaches to problems-solving in most aspects of life.</p>
+          </div>
+          <div class="interest">
+            <h3>Traveling</h3>
+            <p>For past 3 years I've traveled through Serbia, Italy, Switzerland,
+              Dominican Republic and France by trains and planes, couchsurfing and backpacking, developing qualities of
+              responsibility, adaptability, self-management and communication.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="social-media">
+      <header>You can find me here:</header>
+      <article>
+        <div *ngFor="let item of socialMedias">
+          <a href="{{item.link}}"><img src="{{item.icon}}" alt="icon">{{item.description}}</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</div>

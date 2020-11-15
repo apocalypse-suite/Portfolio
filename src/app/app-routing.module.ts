@@ -5,6 +5,7 @@ import {NotFoundComponent} from './components/not-found/not-found.component';
 import {EducationComponent} from './components/education/education.component';
 import {SkillsComponent} from './components/skills/skills.component';
 import {ProjectsComponent} from './components/projects/projects.component';
+import {InfoComponent} from './components/info/info.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'projects',
         component: ProjectsComponent
+      },
+      {
+        path: 'info',
+        component: InfoComponent
       }
     ]
   },
