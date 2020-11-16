@@ -151,3 +151,13 @@
     }
   }
 }
+@media (min-width: 1601px) {
+  .container {
+    .main {
+      width: 60%;
+      .left{
+        padding-top: 0;
+      }
+    }
+  }
+}
